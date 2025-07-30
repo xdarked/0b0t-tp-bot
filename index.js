@@ -36,13 +36,13 @@ bot.once('spawn', () => {
   bot.on("login", () => { console.log(`${bot.username} connected to server at ${new Date}`) });
   bot.once("spawn", () => { console.log(`bot spawned at ${bot.entity.position}`) });
   bot.on("end", (reason) => {
-    console.log(`Disconnected: ${reason}`)
-    setTimeout(() => { startBot() }, 20000)
+  console.log(`Disconnected: ${reason}`)
+  setTimeout(() => { startBot() }, 20000)
   });
   bot.on("kicked", (reason) => { console.log(`bot kicked for: ${reason}`) });
   bot.on("error", (err) => { console.error(`Bot error: ${err}`) });
 }
 
-setTimeout(() => {
-  startBot()
-}, 10000);
+
+startBot()
+

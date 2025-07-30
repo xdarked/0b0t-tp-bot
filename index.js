@@ -17,8 +17,8 @@ function startBot() {
 
 
 bot.once('spawn', () => {
-  bot.chatAddPattern(/^(\w+) wants to teleport to you, \[ACCEPT\] or \[DENY\] or \[IGNORE\]$/, "tpa", "tparequest");
-  })
+  bot.chatAddPattern(/^(\w+) wants to teleport to you\. \[ACCEPT\] \[DENY\] \[IGNORE\]$/, "tpa", "tparequest");
+});
   bot.on('tpa', function (username) {
     console.log(`${username} tried to tp.`)
     let sender_uuid = bot.players[username].uuid;

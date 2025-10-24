@@ -6,7 +6,7 @@ const tpalist = ["uuid1", "uuid2", "uuid3"] //long uuid - eg "af12dc7d-fe8f-4524
 var options = {
   host: "serverip", //server ip 
   port: 25565,
-  version: "1.12.2", //change if needed, will need to fix chat if higher version on 0b0t, so it is better to keep on 1.12.2
+  version: "1.20", //change if needed, will need to fix chat if higher version on 0b0t, so it is better to keep on 1.12.2
   auth: 'microsoft', 
   username: "username", //acount username
 

@@ -37,7 +37,7 @@ bot.once('spawn', () => {
   bot.once("spawn", () => { console.log(`bot spawned at ${bot.entity.position}`) });
   bot.on("end", (reason) => {
   console.log(`Disconnected: ${reason}`)
-  setTimeout(() => { startBot() }, 20000)
+  setTimeout(() => { startBot() }, 10000)
   });
   bot.on("kicked", (reason) => { console.log(`bot kicked for: ${reason}`) });
   bot.on("error", (err) => { console.error(`Bot error: ${err}`) });
